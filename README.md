@@ -79,7 +79,7 @@ sequenceDiagram
 
 ==============================================================================================================================
 
-4. BOOK APP APPLICATION - Deploy and Run the Application on a local workstation
+4. BOOK APP APPLICATION - Deploy and Run the Application on a local workstation (Windows)
 
 sequenceDiagram
     participant User
