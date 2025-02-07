@@ -83,14 +83,20 @@ sequenceDiagram
 
 sequenceDiagram
     participant User
+    participant System
     participant Backend as Express Backend
     participant Frontend as React Frontend
     participant Browser
 
+    User->>System: npm install
     User->>Frontend: Run in Development Mode (npm start)
     Frontend-->>Browser: Open React App on localhost:3000
 
+    User->>System: [SQLite Installation Process] - Extract sqlite.zip contents and copy 6 files to the path C:\sqlite
+    User->>System: [After SQLite Installation] - System Properties > Environment Variables > Edit Path Variable - Include C:\sqlite
+
+    User->>System: npm install
     User->>Backend: Run in Development Mode (node server.js OR nodemon server.js)
     Backend-->>Browser: Open Express (Node) App on localhost:5005/book-service
-
+    
 ==============================================================================================================================
