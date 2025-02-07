@@ -1,0 +1,164 @@
+body {
+    font-family: Tahoma;
+    margin: 0;
+    padding: 0;
+    background-color: #152238;
+    color: #333;
+}
+  
+.container {
+    max-width: 950px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {font-size: 2.5rem }
+p { font-size: 14px }
+a { text-decoration: none }
+
+.fontformatAddEdit {
+	font-family: Tahoma; 
+	font-size: 9pt;
+	color: #FFF;
+	font-weight: bold;	
+}
+
+.fontformatEdit {
+    background: none;
+    border: none;
+	font-size: 16px;
+	cursor: pointer;
+    color: #4CAF50;
+	font-weight: bold;
+	text-align: center;
+}
+
+.fontformatDelete {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+	color: #FF0000;
+	font-weight: bold;
+	text-align: center;
+}
+
+.fontformatmenu {
+	font-family: Tahoma;
+	font-size: 9pt; 
+	color: #F00;
+	text-decoration: none;
+}
+
+.fontblue {
+	color: #007BFF;
+    font-weight: bold;
+}
+
+.fontpagination {
+    background: none;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+	color: #007BFF;
+	text-align: center;
+}
+
+.fontpaginationdisabled {
+    background: none;
+    border: none;
+    font-size: 12px; 
+    color: #AAA;
+    text-align: center;
+}
+
+.buttonMenu { width: 150px; padding: 5px; background-color: #ADD8E6; border: 1px solid #2196F3 }
+.buttonMenu:hover{ box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) }
+
+.buttonAddEdit { width: 120px; padding:6px; background-color: #F44336; border: 1px solid #F00; border-radius: 8px; cursor: pointer }
+.buttonAddEdit:hover{ transform: scale(1.025) } 
+.buttonAddEdit:hover{ box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) }
+
+.inputText { border: 1px solid #2196F3; width: 200px; font-family: Tahoma; font-size: 12px; margin-right: 15px }
+.selectText { border: 1px solid #2196F3; width: 205px; font-family: Tahoma; font-size: 12px }
+
+/* Table Styling */
+.tableLogin {
+    width: 50%;
+    margin: 20px auto;
+    font-size: 13px;
+    text-align: left;
+    border: 2px solid rgb(186 230 253);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tableLogin th,
+.tableLogin td {
+    padding: 7px 10px;
+}
+
+.tableTitle {
+    width: 100%;
+    margin: 20px auto;
+    font-size: 13px;
+    text-align: left;
+    border: 2px solid rgb(186 230 253);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tableTitle th,
+.tableTitle td {
+    padding: 7px 10px;
+}
+
+.tableDisplay {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 13px;
+    text-align: left;
+    border: 2px solid rgb(186 230 253);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ 
+.tableDisplay th,
+.tableDisplay td {
+    padding: 12px 15px;
+}
+  
+.tableDisplay thead tr {
+    background-color: rgb(186 230 253);
+    color: #333;
+    text-align: left;
+}
+  
+.tableDisplay tbody tr {
+    border-bottom: 1px solid #DDD;
+}
+  
+.tableDisplay tbody tr:nth-of-type(even) {
+    background-color: rgb(224 242 254);
+}
+  
+.tableDisplay tbody tr:last-of-type {
+    border-bottom: 2px solid rgb(186 230 253);
+}
+  
+.tableDisplay tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.tableAddEdit { width: 95%; margin: 20px auto; font-size: 12px; text-align: left; border: 1px solid #2196F3; border-radius: 5px }
+.tableAddEdit th { background-color: #B9D9EB; border: 1px solid #2196F3; padding: 5px; text-align: left }
+.tableAddEdit td { padding: 5px; text-align: center }
+.tableAddEdit .thcenter, .tdcenter { text-align: center }
+.tableAddEdit .tdright { text-align: right }
+
+.tablePagination { width: 100%; margin: 20px auto; font-size: 12px; text-align: left }
