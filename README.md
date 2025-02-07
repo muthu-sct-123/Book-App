@@ -56,6 +56,7 @@ sequenceDiagram
     User->>System: Open Windows PowerShell & Navigate to Project Folder
     System-->>User: Folder Accessed
 
+    User->>Backend: Build Express App (podman build -f Dockerfile.backend -t backend-express .)
     User->>Backend: Start Express App (podman run -d -p 5005:5005 --name express-app backend-express)
     Backend-->>System: Running Express App
     User->>System: Check if Express App is Running (podman ps)
@@ -66,7 +67,7 @@ sequenceDiagram
         User->>Backend: Remove & Restart Container (podman rm & podman run)
     end
 
-    User->>System: Build Frontend (npm run build)
+    User->>Frontend: Build React App (podman build -f Dockerfile.frontend -t frontend-react .)
     User->>Frontend: Start React App (podman run -d -p 3000:3000 --name react-app frontend-react)
     Frontend-->>System: Running React App
     User->>System: Check if React App is Running (podman ps)
@@ -76,7 +77,7 @@ sequenceDiagram
     else React App is Not Running
         User->>Frontend: Restart React Container (podman start react-app)
     end
-
+    
 ==============================================================================================================================
 
 4. BOOK APP APPLICATION - Deploy and Run the Application on a local workstation (Windows)
